@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+  background: #141E30;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+font-family: 'Rajdhani', sans-serif;
+
+
+
+
+
+
+
+
+
+}
+html{
+  scroll-behavior:smooth;
+}
+
+nav{
+font-family: 'Russo One', sans-serif;
+
+  z-index: 100;
+
+ 
+}
+
+nav>li{
+  
+}
+
+nav>ul{
+  background: #141e30;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+ border:1.5px solid rgb(29, 212, 212);  
+z-index: 100;
+
+
+
+
+
+}
+
+ nav>ul>li>a{
+ color:#00caaf;
+  padding: 5px;
+  border-radius: 15px;
+
+  position: relative;
+  
+
+  
+  
+ }
+ nav>ul>li>a:hover{
+
+ color:whitesmoke;
+   
+ 
+   
+   
+  }
+  nav>ul>li>a::after{
+    content:'';
+    position:absolute;
+    width: 100%;
+    transform:scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+   
+    background-color: #00caaf;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  nav>ul>li>a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+ h1::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #00caaf;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+ }
+ h1:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+h2::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #00caaf;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+ }
+ h2:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+h3::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #00caaf;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+ }
+ h3:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.skills>li {
+ width:30vw;
+}
